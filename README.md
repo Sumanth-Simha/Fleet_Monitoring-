@@ -5,7 +5,7 @@
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 AutoSentinel is an AI-powered fleet intelligence and driver monitoring platform designed to reduce fatigue-related road accidents in commercial transportation systems. The project continuously monitors drivers using a cabin-mounted camera and applies computer vision techniques to detect drowsiness and unresponsiveness in real time.
 
@@ -22,7 +22,7 @@ The platform uses **MediaPipe FaceMesh**, **OpenCV**, **NumPy**, **Supabase**, a
 
 ---
 
-## 🚨 Problem Statement
+## Problem Statement
 
 Driver fatigue remains one of the leading causes of commercial road accidents. Existing solutions such as dashcams, lane departure systems, and manual rest-hour monitoring are largely reactive and fail to identify fatigue before an accident occurs.
 
@@ -36,7 +36,7 @@ AutoSentinel addresses this problem by:
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 - Real-time driver monitoring using a cabin-mounted camera
 - Facial landmark extraction using MediaPipe FaceMesh
@@ -48,14 +48,14 @@ AutoSentinel addresses this problem by:
 
 ---
 
-## 🧠 Core Features
+## Core Features
 
-### 👁️ Real-Time Driver Monitoring
+### Real-Time Driver Monitoring
 - Continuous webcam-based face tracking
 - Facial landmark extraction at 15–30 FPS
 - Low-latency fatigue analysis
 
-### 😴 Fatigue Detection Engine
+### Fatigue Detection Engine
 
 The system computes multiple fatigue indicators simultaneously:
 
@@ -67,7 +67,7 @@ The system computes multiple fatigue indicators simultaneously:
 | Eye Closure Duration | Detects prolonged closures |
 | Fatigue Score | Weighted combined fatigue metric |
 
-### 🚦 Driver State Classification
+### Driver State Classification
 
 | Driver State | EAR | PERCLOS | System Action |
 |---|---|---|---|
@@ -75,11 +75,11 @@ The system computes multiple fatigue indicators simultaneously:
 | Drowsy | 0.10–0.20 | 0.35–0.70 | Audio alert + cloud upload |
 | Unresponsive | < 0.10 | > 0.70 | Continuous alarm + emergency flag |
 
-### ☁️ Cloud-Based Fleet Monitoring
+### Cloud-Based Fleet Monitoring
 
 The platform uploads driver metrics, fatigue events, timestamps, and captured frames to a **Supabase** backend, enabling fleet managers to monitor drivers remotely through a live dashboard.
 
-### 📊 Fleet Dashboard
+### Fleet Dashboard
 
 The Streamlit dashboard provides:
 - Live driver feed
@@ -91,7 +91,7 @@ The Streamlit dashboard provides:
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 Webcam
@@ -124,7 +124,7 @@ Streamlit Fleet Dashboard
 
 ---
 
-## 🧪 Working Principle
+## Working Principle
 
 **Step 1 — Webcam Input**
 
@@ -163,7 +163,7 @@ Combines multiple metrics into a normalized 0–100 score.
 
 ---
 
-## 📁 Project Modules
+## Project Modules
 
 | Module | Description |
 |---|---|
@@ -176,7 +176,7 @@ Combines multiple metrics into a normalized 0–100 score.
 
 ---
 
-## 🖥️ Dashboard Features
+## Dashboard Features
 
 - **Overview Page** — All active drivers with color-coded fatigue states
 - **Driver Detail Page** — Live metrics, EAR charts, historical trends
@@ -185,7 +185,7 @@ Combines multiple metrics into a normalized 0–100 score.
 
 ---
 
-## 📈 Results
+## Results
 
 The system successfully classified all three driver states across multiple test conditions:
 
@@ -203,7 +203,7 @@ Key observations:
 
 ---
 
-## ✅ Advantages
+## Advantages
 
 - Non-intrusive monitoring
 - Real-time fatigue detection
@@ -215,7 +215,7 @@ Key observations:
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
 - Performance degradation under poor lighting
 - Requires visible frontal face orientation
@@ -227,7 +227,7 @@ Key observations:
 
 ---
 
-## 🔮 Future Scope
+## Future Scope
 
 - Raspberry Pi / Jetson Nano hardware deployment
 - IR camera integration
@@ -240,7 +240,7 @@ Key observations:
 
 ---
 
-## 🧰 Requirements
+## Requirements
 
 ### Software
 
@@ -266,7 +266,7 @@ Key observations:
 
 ---
 
-## 🚀 Installation
+## Installation
 
 **1. Clone the repository**
 ```bash
@@ -292,7 +292,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Running the Project
+## Running the Project
 
 **Run the face_detection**
 ```bash
@@ -308,7 +308,7 @@ streamlit run Final_Dashboard/app.py
 
 ---
 
-## 📚 Research References
+## Research References
 
 1. [MediaPipe: A Framework for Building Perception Pipelines](https://arxiv.org/abs/1906.08172)
 2. [Real-Time Eye Blink Detection Using Facial Landmarks](https://vision.fe.uni-lj.si/cvww2016/proceedings/papers/05.pdf)
@@ -320,7 +320,7 @@ streamlit run Final_Dashboard/app.py
 
 ---
 
-## 👨‍💻 Team Members
+## Team Members
 
 - Rohan Sudhan
 - R Sumanth Simha
