@@ -329,7 +329,7 @@ streamlit run Final_Dashboard/app.py
 
 ---
 
-## 📌 Academic Relevance
+## Academic Relevance
 
 This project demonstrates practical implementation of Computer Vision, Artificial Intelligence, Real-Time Systems, Human State Monitoring, Edge AI, Cloud Integration, Fleet Analytics, Human-Machine Interaction, and Autonomous Safety Systems.
 
